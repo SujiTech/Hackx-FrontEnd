@@ -1,0 +1,15 @@
+@import "./defaults.scss"
+
+nav.navbar.hackx
+  background: $theme-color
+
+nav.navbar.hackx > *
+  overflow: hidden
+
+nav.navbar.hackx ul.navbar-nav a
+  color: white
+  padding: 15px 25px
+  font-size: 1em
+  &:hover
+    color: white
+    background: darken($theme-color, 5%)
