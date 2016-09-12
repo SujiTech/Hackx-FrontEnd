@@ -2,6 +2,24 @@ $theme-color: #00828f;
 $highlight-color: #00c7db;
 $action-color: #e47a77;
 
+$title-color: #062735;
+$subtitle-color: #757575;
 $text-color: #757575;
 $disabled-color: #e3e3e3;
 $bg-color: #fafafa;
+
+$label-background-color: #00c7db;
+$label-text-color: white;
+
+$panel-background-color: white;
+$panel-border-color: #eaeaea;
+
+@function zoom($some-number){
+  @return $some-number * 130 / 70
+}
+
+$random-colors-array: #8ffd78, #27ecfd, #fb9505, #000000, #f85bc2, #2153ea, #fb2b69, #fafcfb, #f7f7f7, #1d77ef, #d6cec3, #55efcb, #ffdc38, #ff8c00, #12a7eb, #5ad427, #c86edf, #dedede, #ff5e3a, #ff9500, #ffdb4c, #87fc70, #52edc7, #1ad6fd, #c644fc, #ef4db6, #4a4a4a, #dbddde;
+
+@function random-color(){
+  @return nth($colors, random(length($colors)));
+}
