@@ -51,6 +51,8 @@
   padding: zoom(10px) zoom(9.5px)
 
 .panel-image.hackx
+  flex-shrink: 0
+  
   height: zoom(70px)
   width: zoom(70px)
   user-select: none
