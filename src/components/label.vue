@@ -1,11 +1,11 @@
 <template>
-  <span class="label hackx"><i v-if="icon" class="glyphicon glyphicon-{{icon}}"></i><slot></slot></span>
+  <span class="label hackx"><i v-if="icon" class="glyphicon glyphicon-{{icon}}"></i>{{title}}</span>
 </template>
 
 <script>
 
 export default {
-  props : ["icon"]
+  props : ["icon", "title"]
 }
 </script>
 

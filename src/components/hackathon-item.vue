@@ -10,17 +10,26 @@
     </div>
     <div class="panel-content hackx">
       <div class="panel-title hackx">
-        <slot name="title"></slot>
+        {{title}}
       </div>
       <div class="panel-subtitle hackx">
-        <slot name="subtitle"></slot>
+        {{subtitle}}
       </div>
       <div class="panel-content-body hackx">
-        <label-item icon="heart">上海</label-item><label-item>aajoisjif</label-item>
+        <label-item
+          v-for="t in tags"
+          :icon="t.icon"
+          :title="t.title">
+        </label-item>
+      </div>
+      <div class="panel-content-body hackx">
+        <span class="panel-text hackx">
+          {{desc}}
+        </span>
       </div>
     </div>
     <div class="panel-action hackx">
-    asdasd
+      <action-button title="报名"></action-button>
     </div>
   </div>
 </template>
@@ -39,7 +48,7 @@
   border: solid .5px $panel-border-color
   border-radius: 0px
 
-  padding: 9.5px 9.5px
+  padding: zoom(10px) zoom(9.5px)
 
 .panel-image.hackx
   height: zoom(70px)
@@ -66,22 +75,29 @@
 
 .panel-content-body
   margin-top: 2px
+  .panel-text
+    font-size: zoom(7px)
+    color: $panel-text-color
+    line-height: 1.4em
 
 .panel-action
   align-self: center
   flex-shrink: 0
+  margin-left: zoom(10px)
 
-  width: 115px
+  width: zoom(115px)
 
 </style>
 
 <script>
 import PlaceHolder from "./placeholder.vue"
 import LabelItem from "./label.vue"
+import ActionButton from "./action-btn.vue"
 
 export default {
   components : {
-    PlaceHolder, LabelItem
-  }
+    PlaceHolder, LabelItem, ActionButton
+  },
+  props : ['title', 'subtitle', 'desc', 'tags']
 }
 </script>

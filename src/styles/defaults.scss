@@ -13,6 +13,7 @@ $label-text-color: white;
 
 $panel-background-color: white;
 $panel-border-color: #eaeaea;
+$panel-text-color: #757575;
 
 @function zoom($some-number){
   @return $some-number * 130 / 70
