@@ -98,6 +98,6 @@ export default {
   components : {
     PlaceHolder, LabelItem, ActionButton
   },
-  props : ['title', 'subtitle', 'desc', 'tags']
+  props : ['title', 'subtitle', 'desc', 'tags', 'image', 'action']
 }
 </script>
