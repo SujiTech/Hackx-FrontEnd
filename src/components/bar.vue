@@ -47,6 +47,7 @@
 
   nav.navbar.hackx
     background: $theme-color
+    margin-bottom: 25px
 
   nav.navbar.hackx > *
     overflow: hidden

@@ -15,6 +15,10 @@ $panel-background-color: white;
 $panel-border-color: #eaeaea;
 $panel-text-color: #757575;
 
+$profile-name-color: #4a4a4a;
+$profile-text-color: #757575;
+$profile-divider-color: #d5d5d5;
+
 @function zoom($some-number){
   @return $some-number * 130 / 70
 }
