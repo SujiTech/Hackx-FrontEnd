@@ -24,3 +24,14 @@ $random-colors-array: #8ffd78, #27ecfd, #fb9505, #000000, #f85bc2, #2153ea, #fb2
 @function random-color(){
   @return nth($colors, random(length($colors)));
 }
+
+
+$sm-size   : 768px !default;
+$md-size   : 992px !default;
+$lg-size  : 1200px !default;
+
+@mixin sm-only {
+  @media (max-width : $sm-size) {
+    @content;
+  }
+}

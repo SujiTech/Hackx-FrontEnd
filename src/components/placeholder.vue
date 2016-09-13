@@ -22,4 +22,8 @@ export default {
 div
   width: 100%
   height: 100%
+
+img
+  display: block
+  margin: 0 auto
 </style>

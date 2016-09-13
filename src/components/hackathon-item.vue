@@ -40,6 +40,8 @@
 .panel.hackx
   display: flex
   flex-direction: row
+  @include sm-only
+    flex-direction: column
   flex-wrap: nowrap
   justify-content: space-between
 
@@ -52,9 +54,12 @@
 
 .panel-image.hackx
   flex-shrink: 0
-  
+
   height: zoom(70px)
   width: zoom(70px)
+  @include sm-only
+    width: 100%
+    height: auto
   user-select: none
 
 .panel-content

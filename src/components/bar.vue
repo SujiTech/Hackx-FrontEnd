@@ -55,8 +55,15 @@
     color: white
     padding: 15px 25px
     font-size: .9em
+    text-align: center
     &:hover
       color: white
       background: darken($theme-color, 5%)
 
+  nav.navbar.hackx ul.navbar-nav
+    @include sm-only
+      width: 100vw
+  nav.navbar.hackx .logo
+    @include sm-only
+      width: 100vw
 </style>
