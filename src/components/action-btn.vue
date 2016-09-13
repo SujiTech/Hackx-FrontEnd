@@ -1,6 +1,6 @@
 <template>
   <div class="action-button hackx">
-    <span>{{title}}</span>
+    <span v-text="title"></span>
   </div>
 </template>
 <script>
@@ -28,6 +28,7 @@
     font-size: zoom(10px)
     font-weight: 400
     letter-spacing: zoom(4.2px)
+    text-indent: zoom(4.2px)
 
     user-select: none
     cursor: pointer
