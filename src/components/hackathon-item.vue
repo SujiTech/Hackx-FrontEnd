@@ -92,7 +92,7 @@
   flex-shrink: 0
   margin-left: zoom(10px)
 
-  width: zoom(115px)
+  width: percentage(115/430)
 
 </style>
 
