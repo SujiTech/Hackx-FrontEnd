@@ -29,7 +29,42 @@
   <content class="past-projects">
     
     <panel
+      note="2016年复旦黑客马拉松"
       title="基于 Leap Motion 的多人打架"
+      subtitle=""
+      desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim"
+      :tags="[{title : '游戏', icon: 'thumbs-up'},{title : '上海', icon: 'heart'}]"
+    >
+    </panel>
+    <panel
+      note="2016年群岛峰会"
+      title="基于多人打架的 Leap Motion"
+      subtitle=""
+      desc="山川壯麗，物產豐隆，炎黃世胄，東亞稱雄。毋自暴自棄，毋故步自封，光我民族，促進大同。創業維艱，緬懷諸先烈；守成不易，莫徒務近功。同心同德，貫徹始終，青天白日滿地紅。同心同德，貫徹始終，青天白日滿地紅。"
+      :tags="[{title : '游戏', icon: 'thumbs-up'},{title : '上海', icon: 'heart'}]"
+    >
+    </panel>
+    <panel
+      note="2016年北大黑客马拉松"
+      title="基于 Leap Motion 的打球"
+      subtitle=""
+      desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim"
+      :tags="[{title : '游戏', icon: 'thumbs-up'},{title : '上海', icon: 'heart'}]"
+    >
+    </panel>
+    <panel
+      note="2016年群岛峰会"
+      title="基于多人打架的 Leap Motion"
+      subtitle=""
+      desc="山川壯麗，物產豐隆，炎黃世胄，東亞稱雄。毋自暴自棄，毋故步自封，光我民族，促進大同。創業維艱，緬懷諸先烈；守成不易，莫徒務近功。同心同德，貫徹始終，青天白日滿地紅。同心同德，貫徹始終，青天白日滿地紅。"
+      :tags="[{title : '游戏', icon: 'thumbs-up'},{title : '上海', icon: 'heart'}]"
+    >
+    </panel>
+    <panel
+      note="2016年北大黑客马拉松"
+      title="基于 Leap Motion 的打球"
       subtitle=""
       desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim"

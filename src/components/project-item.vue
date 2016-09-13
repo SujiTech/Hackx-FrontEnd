@@ -1,5 +1,5 @@
 <template>
-  <p class="hackathon-name">2016年复旦黑客马拉松</p>
+  <p class="note" v-text="note"></p>
   <div class="panel hackx">
     <div class="panel-image hackx">
       <place-holder
@@ -38,7 +38,7 @@
 <style lang="sass" scoped>
 @import "../styles/defaults.scss"
 
-.hackathon-name
+.note
   font-size: zoom(10px)
   color: $text-color
 
@@ -110,6 +110,6 @@ export default {
   components : {
     PlaceHolder, LabelItem, ActionButton
   },
-  props : ['title', 'subtitle', 'desc', 'tags', 'image', 'action']
+  props : ['note', 'title', 'subtitle', 'desc', 'tags', 'image', 'action']
 }
 </script>
