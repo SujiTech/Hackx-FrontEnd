@@ -34,6 +34,6 @@
     text-indent: zoom(4.2px)
 
     user-select: none
-    &:hover, &:active
+    &:hover, &:active, &:visited, &:link
       text-decoration: none
 </style>
