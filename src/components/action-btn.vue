@@ -1,7 +1,7 @@
 <template>
-  <div class="action-button hackx">
+  <a class="action-button hackx" href="">
     <span v-text="title"></span>
-  </div>
+  </a>
 </template>
 <script>
   export default {
@@ -11,11 +11,13 @@
 <style lang="sass" scoped>
   @import "../styles/defaults.scss"
   .action-button.hackx
+    z-index: $panel-btn-z-index
     display: table
     width: 100%
     & > span
       display: table-cell
       vertical-align: middle
+      cursor: pointer
 
     height: zoom(30px)
     text-align: center
@@ -24,6 +26,7 @@
     background-color: $action-color
     color: white
     border-radius: zoom(3.5px)
+    box-shadow: $action-btn-shadow
 
     font-size: zoom(10px)
     font-weight: 400
@@ -31,5 +34,6 @@
     text-indent: zoom(4.2px)
 
     user-select: none
-    cursor: pointer
+    &:hover, &:active
+      text-decoration: none
 </style>

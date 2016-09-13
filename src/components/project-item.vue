@@ -1,10 +1,11 @@
 <template>
+  <p class="hackathon-name">2016年复旦黑客马拉松</p>
   <div class="panel hackx">
     <div class="panel-image hackx">
       <place-holder
         width="130"
         height="130"
-        text="hackathon"
+        text="SUPER AWESOME PROJECT PICTURE"
       >
       </place-holder>
     </div>
@@ -29,7 +30,7 @@
       </div>
     </div>
     <div class="panel-action hackx">
-      <action-button title="报名"></action-button>
+      <action-button title="DEMO"></action-button>
     </div>
   </div>
 </template>
@@ -37,8 +38,11 @@
 <style lang="sass" scoped>
 @import "../styles/defaults.scss"
 
+.hackathon-name
+  font-size: zoom(10px)
+  color: $text-color
+
 .panel.hackx
-  z-index: $panel-z-index
   display: flex
   flex-direction: row
   @include sm-only

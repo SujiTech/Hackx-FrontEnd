@@ -2,6 +2,9 @@ $theme-color: #00828f;
 $highlight-color: #00c7db;
 $action-color: #e47a77;
 
+$panel-z-index: 1;
+$panel-btn-z-index: 100;
+
 $title-color: #062735;
 $subtitle-color: #757575;
 $text-color: #757575;
@@ -14,6 +17,8 @@ $label-text-color: white;
 $panel-background-color: white;
 $panel-border-color: #eaeaea;
 $panel-text-color: #757575;
+
+$action-btn-shadow: 0 1px 3.5px 0 rgba(0, 0, 0, 0.2);
 
 $profile-name-color: #4a4a4a;
 $profile-text-color: #757575;

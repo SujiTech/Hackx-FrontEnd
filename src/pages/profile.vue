@@ -28,11 +28,19 @@
   </content>
   <content class="past-projects">
     
+    <panel
+      title="基于 Leap Motion 的多人打架"
+      subtitle=""
+      desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim"
+      :tags="[{title : '游戏', icon: 'thumbs-up'},{title : '上海', icon: 'heart'}]"
+    >
+    </panel>
   </content>
 </template>
 
 <script>
-import Panel from "../components/hackathon-item.vue"
+import Panel from "../components/project-item.vue"
 
 export default {
   components : {
@@ -59,18 +67,17 @@ export default {
 
   color: $profile-text-color
   & > *
-    width: zoom(80px)
+    width: 100%
 
   .head-image
     display: block
-    height: zoom(80px)
+    padding-bottom: 100%
     background-repeat: no-repeat
     background-size: 100% 100%
     border-radius: 50%
 
   .name
     display: block
-    width: zoom(80px)
     margin-top: 13px
 
     font-size: zoom(12px)
@@ -83,7 +90,7 @@ export default {
 
   .info
     display: flex
-    flex-wrap: wrap
+    flex-wrap: no-wrap
     margin: zoom(5.5px) auto
     clear: left
     font-size: zoom(7px)
@@ -94,6 +101,7 @@ export default {
     div.text
       width: 100px // hack
       flex-grow: 1
+      flex-shrink: 0
 
       margin-left: zoom(4.5px)
       margin-right: 0
