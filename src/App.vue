@@ -3,8 +3,8 @@
   </nav-bar>
   <div id="app">
     <div class="container">
-      <profile>
-      </profile>
+      <project>
+      </project>
     </div>
   </div>
 </template>
@@ -16,13 +16,15 @@ import NavBar from "./components/bar.vue"
 
 import Index from "./pages/index.vue"
 import Profile from "./pages/profile.vue"
+import Project from "./pages/project.vue"
 
 export default {
   components: {
     PlaceHolder,
     NavBar,
     Index,
-    Profile
+    Profile,
+    Project,
   }
 }
 </script>
