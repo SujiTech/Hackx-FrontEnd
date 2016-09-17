@@ -1,11 +1,11 @@
 <template>
   <div class="container">
+    <!--
     <login>
     </login>
-    <!--
+    -->
       <register>
       </register>
-    -->
   </div>
 </template>
 

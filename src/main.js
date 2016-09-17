@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import App from './App'
-import Login from './Login'
+import Auth from './Auth'
 
 new Vue({
   el: 'body',
-  components: { Login, App }
+  components: { Auth, App }
 })
