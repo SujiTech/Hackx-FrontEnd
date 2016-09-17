@@ -2,7 +2,10 @@
   <span
     :class="['label', 'hackx', `bg-${theme}`, {
         'bg-aqua-blue' : !theme
-      }]"><i v-if="icon" class="glyphicon glyphicon-{{icon}}"></i>{{title}}</span>
+      }]">
+        <i v-if="icon" class="glyphicon glyphicon-{{icon}}"></i>
+        {{title}}
+  </span>
 </template>
 <script>
 
