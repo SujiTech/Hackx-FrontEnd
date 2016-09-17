@@ -15,6 +15,8 @@
     display: table
     width: 100%
     & > span
+      padding-top: 8px
+      padding-bottom: 8px
       display: table-cell
       vertical-align: middle
       cursor: pointer
@@ -25,7 +27,7 @@
 
     background-color: $action-color
     color: white
-    border-radius: zoom(3.5px)
+    border-radius: 3.5px
     box-shadow: $action-btn-shadow
 
     font-size: zoom(10px)
