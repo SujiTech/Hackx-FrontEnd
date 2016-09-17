@@ -1,11 +1,13 @@
 <template>
-  <span class="label hackx"><i v-if="icon" class="glyphicon glyphicon-{{icon}}"></i>{{title}}</span>
+  <span
+    :class="['label', 'hackx', `bg-${theme}`, {
+        'bg-aqua-blue' : !theme
+      }]"><i v-if="icon" class="glyphicon glyphicon-{{icon}}"></i>{{title}}</span>
 </template>
-
 <script>
 
 export default {
-  props : ["icon", "title"]
+  props : ["icon", "title", "theme"]
 }
 </script>
 
@@ -17,7 +19,6 @@ export default {
   line-height: zoom(14px)
   font-weight: 200
 
-  background-color: $label-background-color
   color: $label-text-color
 
   margin-right: .6em
@@ -27,4 +28,5 @@ export default {
 .label.hackx > i
   margin-left: - .3em
   margin-right: .3em
+
 </style>
