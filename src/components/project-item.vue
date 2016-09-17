@@ -76,14 +76,10 @@
   flex-grow: 1
 
 .panel-title
-  font-size: zoom(12px)
-  font-weight: 600
-  color: $title-color
+  @include title(12px)
 
 .panel-subtitle
-  font-size: zoom(10px)
-  font-weight: bold
-  color: $subtitle-color
+  @include subtitle(10px)
 
 .panel-content-body
   margin-top: 2px
