@@ -1,11 +1,7 @@
 <template>
-  <nav-bar>
-  </nav-bar>
-  <div id="app">
-    <div class="container">
-      <profile>
-      </profile>
-    </div>
+  <div class="container">
+    <login>
+    </login>
   </div>
 </template>
 
@@ -13,18 +9,14 @@
 
 import PlaceHolder from "./components/placeholder.vue"
 import NavBar from "./components/bar.vue"
+import Login from "./pages/login.vue"
 
-import Index from "./pages/index.vue"
-import Profile from "./pages/profile.vue"
-import Project from "./pages/project.vue"
 
 export default {
   components: {
     PlaceHolder,
     NavBar,
-    Index,
-    Profile,
-    Project,
+    Login
   }
 }
 </script>
@@ -32,8 +24,12 @@ export default {
 <style lang="sass">
 @import './styles/defaults.scss'
 
-body, html
-  background: $bg-color
+#login-container
+  height: 100vh
+  overflow-y: auto
+  background: $theme-color
   font-family: "PingFang SC"
+  color: white
+
 
 </style>
