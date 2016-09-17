@@ -14,18 +14,23 @@
       </div>
       <div class="form-group">
         <label for="exampleInputPassword1">用户名</label>
+        <input type="text" class="form-control"
+               placeholder="example">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">密码</label>
         <input type="password" class="form-control"
                placeholder="Password">
       </div>
       <action-button
-        title="登录"
+        title="注册"
         :style="{
           height: '30px',
         }"
       >
       </action-button>
       <p class="to-login">
-        尚未注册？由此<a href="">注册</a>
+        已经注册？由此<a href="">登录</a>
       </p>
     </form>
   </content>

@@ -2,6 +2,10 @@
   <div class="container">
     <login>
     </login>
+    <!--
+      <register>
+      </register>
+    -->
   </div>
 </template>
 
@@ -10,13 +14,15 @@
 import PlaceHolder from "./components/placeholder.vue"
 import NavBar from "./components/bar.vue"
 import Login from "./pages/login.vue"
+import Register from "./pages/register.vue"
 
 
 export default {
   components: {
     PlaceHolder,
     NavBar,
-    Login
+    Login,
+    Register
   }
 }
 </script>
