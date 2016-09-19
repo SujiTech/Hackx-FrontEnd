@@ -42,6 +42,16 @@ export default {
 }
 </script>
 
+<style lang="sass">
+@import '../styles/defaults.scss'
+
+body
+  height: 100vh
+  overflow-y: auto
+  background: $theme-color
+  font-family: "PingFang SC"
+  color: white
+</style>
 <style lang="sass" scoped>
 @import '../styles/defaults.scss'
 
@@ -76,5 +86,4 @@ form.hackx
   font-weight: 500
   a
     color: $peach
-
 </style>

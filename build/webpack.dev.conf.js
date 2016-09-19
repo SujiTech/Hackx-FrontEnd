@@ -29,6 +29,16 @@ module.exports = merge(baseWebpackConfig, {
       filename: 'index.html',
       template: 'index.html',
       inject: true
-    })
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'login.html',
+      template: 'login.html',
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'register.html',
+      template: 'register.html',
+      inject: true
+    }),
   ]
 })

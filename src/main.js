@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import App from './App'
-import Auth from './Auth'
+import Login from './pages/login'
+import Register from './pages/register'
 
 new Vue({
   el: 'body',
-  components: { Auth, App }
+  components: { Login, Register, App }
 })
