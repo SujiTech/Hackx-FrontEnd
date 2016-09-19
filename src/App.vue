@@ -1,11 +1,6 @@
 <template>
-  <nav-bar>
-  </nav-bar>
-  <div id="app">
-    <div class="container">
-      <profile>
-      </profile>
-    </div>
+  <div class="container" id="app-page">
+    <router-view></router-view>
   </div>
 </template>
 
@@ -18,7 +13,8 @@ import Index from "./pages/index.vue"
 import Profile from "./pages/profile.vue"
 import Project from "./pages/project.vue"
 
-export default {
+
+const App = {
   components: {
     PlaceHolder,
     NavBar,
@@ -27,6 +23,9 @@ export default {
     Project,
   }
 }
+
+export default App
+
 </script>
 
 <style lang="sass">
