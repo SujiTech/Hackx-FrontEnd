@@ -45,7 +45,7 @@ export default {
 <style lang="sass">
 @import '../styles/defaults.scss'
 
-body
+body.layout-auth
   height: 100vh
   overflow-y: auto
   background: $theme-color
